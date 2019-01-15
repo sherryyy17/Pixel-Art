@@ -12,3 +12,9 @@ h3{
     vertical-align: middle;
     margin:2px;
 }
+p{
+    font-weight: 550;
+}
+input[type=number]{  
+     width: 6em;
+}
