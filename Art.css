@@ -1,0 +1,14 @@
+body{  display: block;
+        text-align: center;
+}
+h1{
+    font-family:Monoton;
+    font-size: 70px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+h3{
+    position: relative;
+    vertical-align: middle;
+    margin:2px;
+}
