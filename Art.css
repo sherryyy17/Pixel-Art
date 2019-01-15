@@ -18,3 +18,7 @@ p{
 input[type=number]{  
      width: 6em;
 }
+#pick{
+    display: inline;
+    margin-top: 100px;
+}
