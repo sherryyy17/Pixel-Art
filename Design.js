@@ -1,16 +1,14 @@
-var row,cell;
-$('#sub').on('click',function(){
-    row=$('#gridh').val();
-    cell=$('#gridw').val();
-    $('tr').remove();
+$("#sub").on('click',function(){
+    var row=$('#gridh').val();
+    var cell=$('#gridw').val();
     makeGrid(row,cell);
 });
 function makeGrid(r,c){
-for(var i=0;i<r;i=i+1)
-{   $("#grid").append("<tr></tr>");
-    for(var j=0;j<c;j=j+1)
-    {   
-        $("tr:last").append("<td></td>");
+for(var i=0;i<r;i++)
+{   $("table").append("<tr></tr>");
+    for(var j=0;j<c;j++)
+    {  $("tr:last").append("<td></td>");
     }
+    event.preventDefault();
 }
 }
