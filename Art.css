@@ -26,3 +26,9 @@ input[type=number]{
     margin-top: 10px;
     margin-bottom: 20px;
 }
+table{
+    border-collapse:collapse;
+}
+table,tr,td{
+    border:1px solid black;
+}
