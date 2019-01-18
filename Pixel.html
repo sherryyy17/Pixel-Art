@@ -10,14 +10,14 @@
     <h1>Pixel Art Maker</h1>
     <div>
         <h3>Choose grid Size</h3>
-        <form id="para">
+        <form id="para" onsubmit="return false">
             Grid Height:<input id="gridh" type="number" name="height" value="10" maxlength="2">
             Grid Widht:<input id="gridw" type="number" name="widht" value="10" maxlength="2">
             <input id="sub" type="submit">
         </form>    
     </div>
     <div>
-        <p><b id="col">Pick a color </b><input type="color" name="favcolor" value="#FFFF00"></p>
+        <p><b id="col">Pick a color </b><input id="color" type="color" name="favcolor" value="#FFFF00"></p>
     </div>
         <h3>Design canvas</h3>
         <table id="grid">

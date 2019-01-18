@@ -1,8 +1,9 @@
 $("#para").submit(function(click)
 {   event.preventDefault;
-    console.log("k");
     var row=$("#gridh").val();
     var colm=$("#gridw").val();
+    $("tr").remove();
+    $("button").remove();
     for(var i=0;i<row;i++){
         $("#grid").append("<tr></tr>");
     for(var j=0;j<colm;j++){
@@ -11,4 +12,12 @@ $("#para").submit(function(click)
         event.preventDefault;   
     }
     $("body").append("<button type='reset'>reset</button>");
+
 });
+$("#grid").on("click","td",function(){
+    $(this).css("background",function(){
+        var colo=$("#color").val();
+        return colo;
+    });
+}
+);
