@@ -15,9 +15,15 @@ $("#para").submit(function(click)
 
 });
 $("#grid").on("click","td",function(){
-    $(this).css("background",function(){
+    if($(this).attr("style"))
+        $(this).removeAttr("style");
+    else
+        $(this).css("background",function(){
         var colo=$("#color").val();
         return colo;
     });
 }
 );
+$("body").on("click","button",function(){
+    $("td").removeAttr("style");
+});
